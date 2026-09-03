@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currency Converter</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f9b0f,#00c853);
+}
+
+.container{
+    width:400px;
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+h1{
+    text-align:center;
+    color:#0f9b0f;
+    margin-bottom:10px;
+}
+
+p{
+    text-align:center;
+    color:#666;
+    font-size:14px;
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#333;
+}
+
+input,select{
+    width:100%;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    margin-bottom:20px;
+    font-size:16px;
+}
+
+.row{
+    display:flex;
+    gap:15px;
+}
+
+.row .box{
+    width:50%;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#0f9b0f;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#087f23;
+}
+
+.result{
+    margin-top:20px;
+    background:#f5f5f5;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+    color:#0f9b0f;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>💰 Currency Converter</h1>
+
+<p>Convert currencies instantly with a clean and modern interface.</p>
+
+<label>Amount</label>
+<input type="number" placeholder="Enter Amount">
+
+<div class="row">
+
+<div class="box">
+<label>From</label>
+<select>
+<option>USD</option>
+<option>PKR</option>
+<option>INR</option>
+<option>EUR</option>
+<option>AED</option>
+<option>SAR</option>
+</select>
+</div>
+
+<div class="box">
+<label>To</label>
+<select>
+<option>PKR</option>
+<option>USD</option>
+<option>INR</option>
+<option>EUR</option>
+<option>AED</option>
+<option>SAR</option>
+</select>
+</div>
+
+</div>
+
+<button>Convert</button>
+
+<div class="result">
+Result: 0.00
+</div>
+
+</div>
+
+</body>
+</html>
+</body>
+</html>

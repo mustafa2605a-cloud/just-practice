@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Even Odd Checker</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 400px;
+      padding: 30px;
+      background: white;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #777;
+      margin-bottom: 25px;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      font-size: 16px;
+      outline: none;
+      margin-bottom: 15px;
+    }
+
+    input:focus {
+      border-color: #667eea;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      background: #667eea;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #5568d9;
+      transform: translateY(-2px);
+    }
+
+    #r {
+   
+      font-size: 18px;
+      font-weight: bold;
+      color: black;
+    }
+
+    .even {
+      background: #d4edda;
+      color: #155724;
+    }
+
+    .odd {
+      background: #fff3cd;
+      color: #856404;
+    }
+
+    .error {
+      background: #f8d7da;
+      color: #721c24;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>VOTE ELIGIBLITY CHECKER</h1>
+    <p>Enter a age to check whether it's a person eligible for vote or not.</p>
+
+    <input
+      type="number"
+      id="number"
+      placeholder="Enter your age"
+    >
+
+    <button onclick="checkNumber()">Check Number</button>
+
+    <p    id="r"     >Result</p>
+
+
+  </div>
+
+
+
+<script>
+   function checkNumber(){
+
+let  given_age=document.getElementById("number").value
+
+
+if(
+    given_age >=18){
+        document.getElementById("r").innerHTML=("eligible for vote")
+
+    }
+
+
+    else{
+
+        document.getElementById("r").innerHTML=("not eligible for vote")
+
+    }
+
+
+   }
+
+
+
+
+</script>
+
+
+ 
+
+
+
+
+</body>
+</html>

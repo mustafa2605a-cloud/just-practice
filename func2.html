@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<input type="text" placeholder="enter your name"  id="name"><br>
+<input type="num" placeholder="enter your age"  id="age"><br>
+<input type="text" placeholder="enter your qualification"  id="qual"><br>
+
+
+<button onclick="change()">see result</button>
+<p id="p1"></p>
+
+
+
+<script>
+function change(){
+
+
+name=document.getElementById("name").value
+age=document.getElementById("age").value
+qualification=document.getElementById("qual").value
+
+
+document.getElementById("p1").innerHTML= "my name is" + name + "<br>" + "i am " + age + "years old" + "<br>" + "my qualification is" + qualification
+
+}
+
+
+
+</script>
+
+
+</body>
+</html>

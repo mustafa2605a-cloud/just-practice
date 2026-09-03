@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Counter App</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .counter-container {
+            width: 400px;
+            padding: 40px;
+            text-align: center;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            color: #333;
+            font-size: 32px;
+        }
+
+        #count {
+            font-size: 80px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        button {
+            border: none;
+            padding: 12px 22px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .decrease {
+            background-color: #ef4444;
+        }
+
+        .reset {
+            background-color: #64748b;
+        }
+
+        #increase {
+            background-color: #22c55e;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="counter-container">
+
+        <h1>Counter App</h1>
+
+        <div id="count"></div>
+
+        <div class="buttons">
+            <button onclick="decrease()"  class="decrease">-</button>
+            <button onclick="clearing()" class="reset">Reset</button>
+            <button  onclick="Increase()" id="increase">+</button>
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+
+let count=0;
+
+document.getElementById("count").innerHTML=count;
+
+           function Increase(){
+        count=count+1;
+
+       document.getElementById("count").innerHTML=count;
+
+           }
+
+
+   function decrease(){
+        count=count-1;
+
+       document.getElementById("count").innerHTML=count;
+
+           }
+
+
+           function clearing(){
+
+
+
+document.getElementById("count").innerHTML=0;
+           }
+
+
+        
+    </script>
+
+</body>
+</html>

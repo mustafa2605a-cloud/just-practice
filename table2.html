@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Company Table</title>
+    <style>
+        /* General layout settings */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Modern Table styling */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden; /* Keeps background styles within rounded borders */
+            font-size: 14px;
+        }
+
+        /* Table headers */
+        th {
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+            padding: 14px 20px;
+            text-align: left;
+        }
+
+        /* Table data rows */
+        td {
+            padding: 12px 20px;
+            border-bottom: 1px solid #e0e0e0;
+            color: #333333;
+            text-transform: capitalize; /* Automatically capitalizes company and country names */
+        }
+
+        /* Zebra striping for readability */
+
+
+        /* Hover effect to highlight data rows */
+        tr:hover {
+            background-color: #f1f1f1;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Country</th>
+            <th>Contact</th>
+        </tr>
+        <tr>
+            <td>kabakjees</td>
+            <td>pakistan</td>
+            <td>09236734523</td>
+        </tr>
+        <tr>
+            <td>kfc</td>
+            <td>pakistan</td>
+            <td>09236734523</td>
+        </tr>
+    </table>
+
+</body>
+</html>

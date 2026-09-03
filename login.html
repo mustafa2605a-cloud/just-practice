@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+         background: linear-gradient(to right,#b8b8b8, #7bff00 );
+            justify-content:center;
+            align-items: center;
+            height: 100vh;
+             box-shadow: 2px 8px 16px 24px solid black;
+        }
+#par{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(141, 139, 139);
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+    align-items: center;
+    transition: all 0.9s ease;
+        backdrop-filter: blur(12px);
+       
+        
+        #par{
+
+    animation:popup .8s ease;
+    border-radius: 10px;
+}
+
+@keyframes popup{
+
+    from{
+        opacity:0;
+        transform:translateY(-50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+}
+.inp{
+    height: 60px;
+    width: 300px;
+    border: solid rgb(197, 195, 195);
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 2px rgb(66, 66, 66);
+
+    display: flex;
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease;
+}
+#b1{
+    background-color: rgb(66, 145, 145);
+    height: 50px;
+    width: 300px;
+    color: black;
+    font-size: 20px;
+     box-shadow: 0px 4px 10px 2px rgb(49, 104, 155);
+         border: solid rgb(197, 195, 195);
+         cursor: pointer;
+         font-family: 'Times New Roman', Times, serif;
+         transition: all 0.3s ease;
+}
+
+#b1:hover{
+    background-color: rgb(66, 82, 92);
+    text-transform: uppercase;
+    font-size:35px ;
+    font-weight: 100;
+    font-family:Arial, Helvetica, sans-serif
+    
+    
+    
+  
+}
+
+#par:hover{
+              transition: all 0.3s ease;
+}
+
+
+    </style>
+</head>
+<body>
+
+<form action="homepagebrand.html">
+
+    <div id="par">  <h1 style="color: rgb(49, 49, 49);">LOGIN FORM</h1>
+        <input type="text" class="inp" placeholder="enter yuour username" required><br>
+   <input type="password" class="inp" placeholder="enter yuour password" required><br>
+   <button id="b1">LOGIN</button>
+    </div>
+    </form>
+    
+</body>
+</html>

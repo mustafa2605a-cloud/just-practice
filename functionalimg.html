@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        background-color: rgb(159, 167, 163);
+    }
+    #b1{
+        cursor: pointer;
+    }
+</style>
+<body>
+    
+    <img style="border: 5px solid blue; " id="img1" src="C:\Users\Administrator\Downloads\tiger.jpg " alt="tiger">
+    <button id="b1" onclick="picchange()"> change the pic</button>
+  
+
+    <script>
+            function picchange(){
+document.getElementById("img1").src="workbook.jpg";
+document.getElementById("img1").style.border="5px solid red";
+
+document.getElementById("img2").style.border="5px solid red";
+document.getElementById("img2").style.width.height="`50px,50px"
+document.getElementById("img2").style.border="5px solid red";
+
+
+            }
+
+
+
+    </script>
+
+</body>
+</html>
