@@ -1,68 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        
-        
-    </style>
-</head>
-<body>
-    <!-- nav bar strats -->
-
-    <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <title>Bootstrap Example</title>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
-    <!-- Example Code Start-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-    <!-- Example Code End -->
-  </body>
-</html>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <title>Document</title>
+  <style>
+    header{
+      height: 75px;
+      width: 1400px;
+      background-color: rgb(255, 174, 0);
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    }
+    #navbar{
+    display: flex;
+    flex-direction: row;
+    }
+li{
+   display: flex;
+    flex-direction: row;
+    margin-left: 400px;
+   margin-top: -30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#icon{
+  margin-left: 1220px;
+  margin-top: -60px;
+  font-size: 30px;
+  cursor: pointer;
+}
+button{
+display: flex;
+  height: 50px;
+  width: 180px;
+  background-color: black;
+  color:rgb(255, 174, 0); 
+  border-radius: 10px;
+  font-size: 23px;
+margin-top: -40px;
+margin-left: 1000px;
+text-align: center;
+padding-top: 10px;
+padding-left: 33px;
+font-weight: bold;
+
+
+}
+
+ul:hover{
+  color:rgb(8, 101, 241);  
+  cursor: pointer;
+  text-decoration: underline;
+}
+#button:hover{
+
+background-color:rgb(255, 174, 0);  
+color: black;
+border: 3px solid black;
+  cursor: pointer;
+}
+
+#label{
+  height: 200px;
+  width: 1400px;
+  background-color: black;
+  color:rgb(255, 174, 0);  
+  margin-top: 200px;
+  text-align: center;
+  text-decoration: solid;
+  padding-top: 40px;
+}
+
+#just{
+  height: 50px;
+  width: 1400px;
+  background-color:rgb(255, 174, 0); 
+  color: black;
+}
+#item{
+display: flex;
+  height: 60px;
+  width: 150px;
+  background-color: black;
+  color:rgb(255, 174, 0);  
+  padding-left: 27px;
+  font-weight: bold;
+}
+
+#item:hover{
+  background-color: rgb(255, 174, 0);
+  border: 3px solid black;
+  cursor: pointer;
+  color: black;
+}
+
+
+#bitems{
+  margin-left: -400px;
+  margin-top: 100px;
+}
+
+#cards{
+  display:inline-flex;
+  gap: 60px;
+}
+
+#images{
+  display: inline-flex;
+height: 400px; 
+width: 400px;
+margin-top: 160px;
+gap: 100px;
+margin-left: 100px;
+
+}
+
+#images2{
+
+gap: 100px;
+
+}
+
+
+
+
+
+
+
+
+
+footer{
+margin-top: 300px;
+    height: 300px;
+      width: 1400px;
+      background-color: rgb(255, 174, 0);
+}
+
+#refresh{
+  height: 60px;
+  width: 1400px;
+  background-color: rgb(255, 174, 0);
+  font-size: 40px;
+  color:rgb(182, 131, 20); 
+  margin-top: 50px;
+  text-align: center;
+}
+
+#label1:hover{
+  font-size:60px ;
+  transition: 0.5s;
+  color: rgb(151, 110, 20);
+  background-color: rgb(255, 174, 0);
+
+}
+#gall:hover{
+  transition: 1s;
+  font-size: 200px;
+  cursor: pointer;
+  color: rgb(255, 174, 0)
+
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+<h2>Cozy Coffe</h2>
+<div id="navbar">
+<li>
+  <ul>Home</ul>
+  <ul>About Us</ul>
+  <ul>Gallery</ul>
+  <ul>Menu</ul>
+  <ul>Contact Us</ul>
+</li>
+</div>
+<div id="icon">
+<i class="bi bi-facebook"></i>
+<i class="bi bi-instagram"></i>
+<i class="bi bi-telephone-fill"></i>
+</div>
+
+<button id="button">BUY NOW</button>
+
+  </header>
+
+<!-- slider starts -->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="slider1.jpg" class="d-block w-100" alt="..." height="600px" width="1400px">
+    </div>
+    <div class="carousel-item">
+      <img src="slider2.jpg" class="d-block w-100" alt="..." height="600px" width="1400px">
+    </div>
+    <div class="carousel-item">
+      <img src="slider3.jpg" class="d-block w-100" alt="..."  height="600px" width="1400px">
+    </div>
+  </div>
+</div> 
+
+    <!-- slider end -->
+
+<div id="refresh"> 
+  TaKe A cOzY ReFrEsH
+</div>
+
+
+
+<div style="margin-top: 250px;">
+
+    <img style="width: 600px; height: 400px;" src="coffe-removebg-preview copy.png" alt="">
+</div>
+
+<div id="withvid" style="margin-left: 700px; margin-top: -350px;" >
+<h1 style="font-weight: bold;">ABOUT US</h1>
+<p  style="color:rgb(216, 153, 17); font-style: italic;">
+ Welcome to our cozy cafe,<br><br> your new favorite neighborhood escape for exceptional coffee and freshly baked treats. <br>  We meticulously source the finest specialty coffee beans and craft every cup to perfection, <br>ensuring a rich and memorable flavor experience with every sip. Our warm,<br> inviting space is designed to be the perfect backdrop for catching up with friends, focusing on work, <br>or simply unwinding with a great book. From our flaky, artisanal pastries to our signature seasonal espresso drinks, <br>everything on our menu is prepared with love and the highest quality ingredients. <br><br>Stop by today to experience our friendly hospitality, find your favorite seat, and let us elevate your daily coffee ritual.
+</p>
+</div>
+
+<div id="label">
+<h1 id="label1">-JUST LISTEN- <br>
+
+"A PERFECT COFFE CAN MAKE YOUR WORLD"</h1>
+</div> <br><br>
+
+<video width="600" height="400px" controls>
+   <source src="c:\Users\ADVANCES   PC\Downloads\46989-449623829.mp4" type="video/mp4">
+</video><br><br>
+<div  id="just">
+<h1>The Promise Of Hygenic is Still Passes.</h1></div><br><br><br>
+
+<div id="bitems">
+<button id="item">VIEW ALL </button>
+</div><br><br>
+
+
+<!-- cards starts -->
+
+
+<div id="cards">
+<div class="card" style="width: 18rem;">
+  <img src="card1.avif" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+  <img src="card2.avif" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+  <img src="card3.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
+
+<div class="card" style="width: 18rem;">
+  <img src="card4.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+
+</div>
+
+
+<h1 id="gall" style="margin-left: 500px; margin-top: 200px; font-size: 100px;" > GALLERY</h1>
+
+<div id="images">
+<img src="gallery1.jpg" alt="">
+<img src="gallery2.jpg" alt="">
+<img src="gallery3.jpg" alt="">
+</div>
+
+<div id="images2">
+<img  style="height: 400px; width: 400px; margin-left: 80px; margin-top: 50px;" src="gallery4.jpg" alt="">
+<img style="height: 400px; width: 400px; margin-top: 50px;" src="gallery5.jpg" alt="">
+<img style="height: 400px; width: 400px; margin-top: 50px;" src="gallery6.jpg" alt="">
+
+</div>
+
+
+
+</div>
+
+
+<footer>
+
+
+  <p style="padding-top: 30px; font-weight: bold;">
+  <h4>Take care</h4>
+    Crafting the perfect cup, from bean to brew. We source sustainable,<br> specialty coffee beans from around the world to bring exceptional flavor <br>straight to your kitchen. Pull up a chair, pour a fresh cup, and stay awhile. <br>
+  </p>
+
+<p style="padding-top: 50px;">© 2026 [Your Coffee Brand Name]. <br>All rights reserved. Crafted with passion and roasted with care,<br> we are dedicated to bringing you the finest sustainably sourced coffee.</p>
+
+
+<h4 style="margin-left: 800px; margin-top: -250px; ">
+
+  Location: 123 Brew Street, Coffee District, <br> <br>City, 12345Phone: (555) 123-4567 <br>Email: hello@yourcoffeewebsite.com <br><br>Hours: Mon–Fri: 7:00 AM – 7:00 PM, Sat–Sun: 8:00 AM – 6:00 PM
+</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+</footer>
 
 </body>
 </html>
